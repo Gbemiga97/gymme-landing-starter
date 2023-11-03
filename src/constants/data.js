@@ -1,23 +1,4 @@
-// images
-import Logo from '../src/assets/img/header/logo.svg';
-import ResistanceImg from '../src/assets/img/workouts/resistance.png';
-import BoxingImg from '../src/assets/img/workouts/boxing.png';
-import BodyPumpImg from '../src/assets/img/workouts/body-pump.png';
-import YogaImg from '../src/assets/img/workouts/yoga.png';
-import FullBodyImg from '../src/assets/img/workouts/full-body.png';
-import FitnessImg from '../src/assets/img/workouts/fitness.png';
-import BattleRopeImg from '../src/assets/img/workouts/battle-rope.png';
-import CommunityImg1 from '../src/assets/img/community/img1.png';
-import CommunityImg2 from '../src/assets/img/community/img2.png';
-import CommunityImg3 from '../src/assets/img/community/img3.png';
-import CommunityImg4 from '../src/assets/img/community/img4.png';
-import JoinImg from '../src/assets/img/join/woman.png';
-// icons
-import UsersIcn from '../src/assets/img/about/icons/users-icn.svg';
-import CalendarIcn from '../src/assets/img/workouts/icons/calendar.svg';
-import PriceIcn from '../src/assets/img/pricing/icons/price.svg';
-import CommunityIcn from '../src/assets/img/community/icons/community-icn.svg';
-import QuestionMarkIcn from '../src/assets/img/faq/icons/question-mark.svg';
+import { images } from ".";
 
 export const header = {
   logo: Logo,
@@ -44,7 +25,7 @@ export const banner = {
 };
 
 export const about = {
-  icon: UsersIcn,
+  icon: images.UsersIcn,
   title: 'Our misson',
   subtitle1:
     'We are distinguished by our unsurpassed motivating atmosphere, knowledgeable staff, and premier exercise equipment, which supports our members in meeting their individual fitness goals.',
@@ -54,42 +35,42 @@ export const about = {
 };
 
 export const workouts = {
-  icon: CalendarIcn,
+  icon: images.CalendarIcn,
   title: 'Training programs',
   programs: [
     {
-      image: ResistanceImg,
+      image: images.ResistanceImg,
       name: 'Resistance',
     },
     {
-      image: BoxingImg,
+      image: images.BoxingImg,
       name: 'Boxing',
     },
     {
-      image: BodyPumpImg,
+      image: images.BodyPumpImg,
       name: 'Body Pump',
     },
     {
-      image: YogaImg,
+      image: images.YogaImg,
       name: 'Yoga',
     },
     {
-      image: FullBodyImg,
+      image: images.FullBodyImg,
       name: 'Full Body',
     },
     {
-      image: FitnessImg,
+      image: images.FitnessImg,
       name: 'Fitness',
     },
     {
-      image: BattleRopeImg,
+      image: images.BattleRopeImg,
       name: 'Battle Rope',
     },
   ],
 };
 
 export const pricing = {
-  icon: PriceIcn,
+  icon: images.PriceIcn,
   title: 'Pricing plan',
   plans: [
     {
@@ -129,29 +110,29 @@ export const pricing = {
 };
 
 export const community = {
-  icon: CommunityIcn,
+  icon: images.CommunityIcn,
   title: 'Community',
   testimonials: [
     {
-      image: CommunityImg1,
+      image: images.CommunityImg1,
       name: 'Mark A.',
       message:
         '“Great location, great price and great, helpful people. What to want more?”',
     },
     {
-      image: CommunityImg2,
+      image: images.CommunityImg2,
       name: 'Lauren K.',
       message:
         '“Gymme changed my life. Not only physically but mentally as well. I’m a better mother, and all around better human being because of this gym.”',
     },
     {
-      image: CommunityImg3,
+      image: images.CommunityImg3,
       name: 'Jhon D.',
       message:
         '“Love these workouts! Trainers are knowledgeable and motivating. Gymme is wonderful!”',
     },
     {
-      image: CommunityImg4,
+      image: images.CommunityImg4,
       name: 'Anne R.',
       message:
         '“Love these workouts! Trainers are knowledgeable and motivating. Gymme is wonderful!”',
@@ -160,7 +141,7 @@ export const community = {
 };
 
 export const faq = {
-  icon: QuestionMarkIcn,
+  icon: images.QuestionMarkIcn,
   title: 'FAQ',
   accordions: [
     {
@@ -197,7 +178,7 @@ export const faq = {
 };
 
 export const join = {
-  image: JoinImg,
+  image: images.JoinImg,
   title: 'Wanna join & have fun?',
   subtitle:
     'We’ll keep you updated on the things you need to know about Gymme. Nothing more, nothing less.',
