@@ -1,12 +1,12 @@
-import { images } from ".";
+import images from "./images";
 
-export const header = {
-  logo: Logo,
+ const header = {
+  logo: images.Logo,
   btnLoginText: 'Log in',
   btnSignupText: 'Sign Up',
 };
 
-export const nav = [
+ const nav = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/' },
   { name: 'Workouts', href: '/' },
@@ -15,7 +15,7 @@ export const nav = [
   { name: 'FAQ', href: '/' },
 ];
 
-export const banner = {
+ const banner = {
   titlePart1: 'Get the best part of your day',
   titlePart2: '– you fit here.',
   subtitle:
@@ -24,7 +24,7 @@ export const banner = {
   img: '',
 };
 
-export const about = {
+ const about = {
   icon: images.UsersIcn,
   title: 'Our misson',
   subtitle1:
@@ -34,7 +34,7 @@ export const about = {
   link: 'Join Now',
 };
 
-export const workouts = {
+ const workouts = {
   icon: images.CalendarIcn,
   title: 'Training programs',
   programs: [
@@ -69,7 +69,7 @@ export const workouts = {
   ],
 };
 
-export const pricing = {
+ const pricing = {
   icon: images.PriceIcn,
   title: 'Pricing plan',
   plans: [
@@ -109,7 +109,7 @@ export const pricing = {
   ],
 };
 
-export const community = {
+ const community = {
   icon: images.CommunityIcn,
   title: 'Community',
   testimonials: [
@@ -140,7 +140,7 @@ export const community = {
   ],
 };
 
-export const faq = {
+ const faq = {
   icon: images.QuestionMarkIcn,
   title: 'FAQ',
   accordions: [
@@ -177,7 +177,7 @@ export const faq = {
   ],
 };
 
-export const join = {
+ const join = {
   image: images.JoinImg,
   title: 'Wanna join & have fun?',
   subtitle:
@@ -185,7 +185,24 @@ export const join = {
   btnText: 'Join now',
 };
 
-export const footer = {
-  logo: Logo,
+ const footer = {
+  logo: images.Logo,
   copyrightText: 'All rights reserved. Gymme 2022.',
 };
+
+
+const data = {
+  header,
+  faq,
+  join,
+  footer,
+  community,
+  nav,
+  pricing,
+  banner,
+  about,
+  workouts
+}
+
+
+export default data

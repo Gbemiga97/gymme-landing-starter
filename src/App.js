@@ -1,8 +1,4 @@
 
-
-// import aos
-import Aos from 'aos';
-import 'aos/dist/aos.css';
 import { About, Banner, Community, Faq, Footer, Header, Join, Pricing, Workouts } from './sections';
 
 
@@ -20,7 +16,7 @@ const App = () => {
       <Faq />
       <Join />
       <Footer />
-      {/* <div className='h-[4000px]'></div> */}
+      <div className='h-[4000px]'></div>
     </div>
   );
 };
