@@ -11,6 +11,7 @@ const Banner = () => {
       variants={variants.staggerContainer}
       initial='initial'
       whileInView={'animate'}
+      viewport={{once: true}}
       className="container  mx-auto h-full">
         <div className="flex items-center h-full relative -space-x-48 lg:-space-x-24">
 

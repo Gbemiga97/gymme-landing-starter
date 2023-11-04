@@ -7,12 +7,12 @@ const Workouts = () => {
   const { title, icon, programs } = data.workouts
 
   return (
-    <section id="workouts" className="section">
+    <section id="workouts" className="section py-24">
       <motion.div
       variants={variants.staggerContainer}
       initial="initial"
       whileInView={'animate'}
-      viewport={{ once: false, amount:0.7 }}
+      viewport={{ once: true }}
       className="container mx-auto">
         <motion.div 
         variants={variants.fadeInUp}
@@ -27,7 +27,7 @@ const Workouts = () => {
       variants={variants.fadeInLeft}
       initial='initial'
       whileInView={'animate'}
-      viewport={{once: false, amount: 0.8}} 
+      viewport={{once: true}} 
       >
         <WorkoutSlider programs={programs} />
       </motion.div>

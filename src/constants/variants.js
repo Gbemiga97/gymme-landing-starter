@@ -97,6 +97,21 @@
   },
 };
 
+const fadeUpFunction = (delay = 0) => ({
+  initial: {
+    y: 70,
+    opacity: 0,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: { type: 'tween',
+    duration: 1.1,
+    delay
+  },
+  },
+})
+
  const fadeInLeft = {
   initial: {
     x: 70,
@@ -135,7 +150,7 @@ const variants = {
   fadeInUp,
   fadeInLeft,
   fadeInRight,
-  
+  fadeUpFunction
 }
 
 export default  variants

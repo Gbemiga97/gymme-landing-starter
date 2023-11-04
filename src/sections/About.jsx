@@ -14,7 +14,7 @@ const About = () => {
       variants={variants.staggerContainer}
       initial='initial'
       whileInView={'animate'}
-      viewport={{ once: false, amount: 0.6 }}
+      viewport={{ once: true}}
       className="container mx-auto px-[20px] lg:px-[135px]">
         <motion.div
         variants={variants.fadeInUp}
