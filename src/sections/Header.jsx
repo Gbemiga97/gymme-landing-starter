@@ -1,8 +1,10 @@
 import { Link } from "react-scroll";
-import { data } from "../constants";
+import { data, variants } from "../constants";
 import { Nav, NavMobile } from "../components";
 import {RiCloseFill, RiMenu4Fill} from 'react-icons/ri'
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+
 
 const Header = () => {
   
@@ -24,7 +26,12 @@ const Header = () => {
   })
 
   return (
-    <header className={`${isActive ? 'bg-neutral-500 py-[1rem] ' : 'bg-transparent py-[20px]'}
+    <motion.header
+    variants={variants.fadeInDown}
+    initial='initial'
+    whileInView={'animate'}
+    viewport={{once: true}}
+    className={`${isActive ? 'bg-neutral-500 py-[1rem] ' : 'bg-transparent py-[20px]'}
     fixed max-w-[1440px] z-30 left-0 right-0 mx-auto flex justify-between items-center px-[20px] 
     lg:px-[80px] transition-all duration-300`}>
 
@@ -33,7 +40,7 @@ const Header = () => {
         spy={true}
         >
         <img
-        className="h-[1.8rem]" 
+        className="h-[1.8rem] cursor-pointer" 
         src={logo}
          alt="logo" />
         </Link>
@@ -56,7 +63,7 @@ const Header = () => {
         </button>
 
         <NavMobile showNav={showNav} setShowNav={setShowNav} />
-    </header>
+    </motion.header>
   )
 };
 
