@@ -69,3 +69,9 @@
     @apply flex -space-x-4;
   }
 }
+
+
+
+*{
+  scroll-behavior: smooth;
+}

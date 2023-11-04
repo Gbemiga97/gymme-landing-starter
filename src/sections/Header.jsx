@@ -40,7 +40,7 @@ const Header = () => {
 
         <Nav />
 
-        <div className="hidden lg:flex space-x-4"> 
+        <div className="hidden xl:flex space-x-4"> 
         <button className="btn btn-sm text-white hover:text-primary-200 transition">
           {btnLoginText}</button>
           <button className="btn btn-sm btn-primary">
@@ -49,7 +49,7 @@ const Header = () => {
 
         <button 
         onClick={() => setShowNav(prev => !prev)}
-        className=" text-primary-200 text-3xl lg:hidden absolute right-4  cursor-pointer">
+        className=" text-primary-200 text-3xl xl:hidden absolute right-4  cursor-pointer">
           {
             showNav ? <RiCloseFill /> : <RiMenu4Fill />
           }

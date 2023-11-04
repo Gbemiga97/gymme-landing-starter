@@ -6,17 +6,17 @@ const Banner = () => {
   const {titlePart1, titlePart2, subtitle, textBtn, img} = data.banner
 
   return (
-    <section className="bg-neutral-500 h-[790px]">
+    <section id="/" className="bg-neutral-500 h-[790px]">
       <motion.div
       variants={variants.staggerContainer}
       initial='initial'
       whileInView={'animate'}
-      className="container mx-auto h-full">
+      className="container  mx-auto h-full">
         <div className="flex items-center h-full relative -space-x-48 lg:-space-x-24">
 
           <motion.div 
           variants={variants.fadeInDown}
-          className="text-white flex-1 z-10 pl-6 lg:pl-0">
+          className="text-white  flex-1 z-10 pl-6 lg:pl-0">
             <h1 className="h1 text-white mb-8">
               {titlePart1} <br /> 
               <span className="text-primary-200">

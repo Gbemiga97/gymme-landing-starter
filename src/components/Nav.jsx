@@ -4,7 +4,7 @@ import { data } from "../constants";
 
 const Nav = () => {
   return (
-    <nav className="hidden lg:flex">
+    <nav className="hidden xl:flex">
       <ul className="flex text-white gap-x-8">
         {
           data.nav.map(({name, href}, i) => (
